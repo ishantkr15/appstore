@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category — ModGalaxy</title>
+    <meta name="description" id="metaDesc"
+        content="Browse and download mod APKs by category on ModGalaxy. Free, safe, and fast.">
+    <meta name="keywords" id="metaKeywords" content="mod apk, android mods, modded games, free apk, modgalaxy">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="ModGalaxy">
+    <link rel="canonical" id="canonicalLink" href="https://modgalaxy.in/category.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" id="ogTitle" content="Category — ModGalaxy">
+    <meta property="og:description" id="ogDesc" content="Browse mod APKs by category on ModGalaxy.">
+    <meta property="og:url" id="ogUrl" content="https://modgalaxy.in/category.html">
+    <meta property="og:site_name" content="ModGalaxy">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" id="twTitle" content="Category — ModGalaxy">
+    <meta name="twitter:description" id="twDesc" content="Browse mod APKs by category.">
+
+    <style>
+        /* Professional Category Page Theme */
+        :root {
+            --primary: #00c853;
+            --primary-dark: #00a844;
+            --primary-light: #e8f5e9;
+            --primary-soft: rgba(0, 200, 83, 0.1);
+            --primary-gradient: linear-gradient(135deg, #00c853 0%, #00a844 100%);
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --text-lighter: #94a3b8;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e0;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --radius-sm: 6px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .navbar {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--text-dark);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--text-dark) 0%, #000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            white-space: nowrap;
+        }
+
+        .logo-icon {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .search-wrapper {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bg-light);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 10px 16px;
+            transition: all 0.2s;
+        }
+
+        .search-bar:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-soft);
+            background: var(--bg-white);
+        }
+
+        .search-bar input {
+            border: none;
+            background: none;
+            outline: none;
+            width: 100%;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .search-bar input::placeholder {
+            color: var(--text-lighter);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 8px 16px;
+            border-radius: var(--radius-md);
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            max-width: 1300px;
+            margin: 20px auto 0;
+            padding: 0 30px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .breadcrumb a::after {
+            content: '/';
+            margin: 0 8px;
+            color: var(--text-lighter);
+        }
+
+        .breadcrumb span {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1300px;
+            margin: 20px auto 40px;
+            padding: 0 30px;
+            flex: 1;
+        }
+
+        /* Category Header */
+        .category-header {
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+
+        .category-header::after {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: var(--primary-soft);
+            border-radius: 50%;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .category-header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 15px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .category-header h1 svg {
+            width: 40px;
+            height: 40px;
+            stroke: var(--primary);
+            fill: none;
+        }
+
+        .category-stats {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: var(--text-light);
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .category-count {
+            background: var(--primary-light);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: var(--primary-dark);
+            border: 1px solid var(--primary);
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .category-count::before {
+            content: '📊';
+            font-size: 1rem;
+        }
+
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding: 5px;
+            background: var(--bg-white);
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .category-tab {
+            padding: 10px 22px;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-tab:hover {
+            color: var(--primary);
+            background: var(--primary-soft);
+            transform: translateY(-2px);
+        }
+
+        .category-tab.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .category-tab svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+        }
+
+        /* Apps Grid */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .app-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 20px 16px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 0.5s ease-out;
+            animation-fill-mode: both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .app-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Stagger animation */
+        .app-card:nth-child(1) {
+            animation-delay: 0.05s;
+        }
+
+        .app-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .app-card:nth-child(3) {
+            animation-delay: 0.15s;
+        }
+
+        .app-card:nth-child(4) {
+            animation-delay: 0.2s;
+        }
+
+        .app-card:nth-child(5) {
+            animation-delay: 0.25s;
+        }
+
+        .app-card:nth-child(6) {
+            animation-delay: 0.3s;
+        }
+
+        .app-card:nth-child(7) {
+            animation-delay: 0.35s;
+        }
+
+        .app-card:nth-child(8) {
+            animation-delay: 0.4s;
+        }
+
+        .app-card:nth-child(n+9) {
+            animation-delay: 0.45s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .app-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .app-card-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--radius-lg);
+            margin-bottom: 16px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s;
+            border: 2px solid var(--bg-white);
+        }
+
+        .app-card:hover .app-card-icon {
+            transform: scale(1.08);
+        }
+
+        .app-card-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--text-dark);
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .app-card-dev {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .app-card-rating {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid var(--primary);
+        }
+
+        .app-card-rating::before {
+            content: '★';
+            color: #f59e0b;
+            font-size: 1rem;
+        }
+
+        /* Empty State */
+        .empty-state {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 60px 30px;
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            color: var(--text-light);
+            font-size: 1.1rem;
+            border: 2px dashed var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .empty-state svg {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            display: block;
+            stroke: var(--text-lighter);
+            stroke-width: 1.5;
+        }
+
+        .empty-state p {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Loading State */
+        .loading-apps {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-light);
+            position: relative;
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border);
+        }
+
+        .loading-apps::after {
+            content: '';
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-white);
+            border-top: 1px solid var(--border);
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+
+        .footer-col p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            max-width: 1300px;
+            margin: 30px auto 0;
+            padding: 20px 30px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-lighter);
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 150;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 280px;
+            height: 100%;
+            background: var(--bg-white);
+            z-index: 151;
+            transition: left 0.3s ease;
+            box-shadow: var(--shadow-xl);
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .mobile-menu-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .mobile-menu-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .mobile-menu-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .mobile-menu-content {
+            padding: 20px;
+        }
+
+        .mobile-menu-section {
+            margin-bottom: 24px;
+        }
+
+        .mobile-menu-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-lighter);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .mobile-menu-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all 0.2s;
+            margin-bottom: 4px;
+        }
+
+        .mobile-menu-link:hover {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .mobile-menu-link.active {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .mobile-cat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .mobile-cat-item {
+            padding: 10px;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.85rem;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .mobile-cat-item:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .navbar {
+                padding: 12px 20px;
+            }
+
+            .search-wrapper {
+                max-width: none;
+            }
+
+            .breadcrumb {
+                padding: 0 20px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .category-header {
+                padding: 24px;
+            }
+
+            .category-header h1 {
+                font-size: 2rem;
+            }
+
+            .category-header h1 svg {
+                width: 32px;
+                height: 32px;
+            }
+
+            .category-stats {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .category-tabs {
+                border-radius: 30px;
+                justify-content: center;
+                padding: 8px;
+            }
+
+            .category-tab {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .apps-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 16px;
+            }
+
+            .app-card-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .app-card-name {
+                font-size: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .category-header h1 {
+                font-size: 1.6rem;
+            }
+
+            .category-tab {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+
+            .apps-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .app-card {
+                padding: 15px 10px;
+            }
+
+            .app-card-icon {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        /* Category Icons Mapping */
+        .cat-icon-action svg {
+            stroke: #f97316;
+        }
+
+        .cat-icon-arcade svg {
+            stroke: #8b5cf6;
+        }
+
+        .cat-icon-racing svg {
+            stroke: #3b82f6;
+        }
+
+        .cat-icon-strategy svg {
+            stroke: #ec4899;
+        }
+
+        .cat-icon-sports svg {
+            stroke: #14b8a6;
+        }
+
+        .cat-icon-tools svg {
+            stroke: #6b7280;
+        }
+
+        .cat-icon-social svg {
+            stroke: #6366f1;
+        }
+
+        .cat-icon-productivity svg {
+            stroke: #a855f7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <a href="index.html" class="logo"><span class="logo-icon">MOD</span>Galaxy</a>
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search apps...">
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="category.html?cat=Action">Games</a>
+                <a href="category.html?cat=Tools">Apps</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span id="catBreadcrumb">Category</span>
+    </div>
+
+    <div class="container">
+        <div class="category-header">
+            <h1 id="categoryTitle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 7h-4.5A2.5 2.5 0 0 1 13 4.5V3" />
+                    <path d="M4 7h4.5A2.5 2.5 0 0 0 11 4.5V3" />
+                    <path d="M4 17h4.5A2.5 2.5 0 0 1 11 19.5V21" />
+                    <path d="M20 17h-4.5A2.5 2.5 0 0 0 13 19.5V21" />
+                    <line x1="8" y1="3" x2="16" y2="3" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                </svg>
+                <span id="categoryTitleText">Category</span>
+            </h1>
+            <div class="category-stats">
+                <span class="category-count" id="categoryCount">Loading...</span>
+                <span id="categoryDescription">Discover the best modded apps in this category</span>
+            </div>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs"></div>
+
+        <div class="apps-grid" id="appsGrid">
+            <div class="loading-apps">Loading apps...</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>ModGalaxy</h3>
+                <p>The safest place to download Mod APKs for Android. All files are verified and virus-free.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="category.html?cat=Action">Games</a>
+                <a href="category.html?cat=Tools">Apps</a>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <a href="category.html?cat=Action">Action</a>
+                <a href="category.html?cat=Racing">Racing</a>
+                <a href="category.html?cat=Strategy">Strategy</a>
+                <a href="category.html?cat=Tools">Tools</a>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">DMCA</a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 ModGalaxy.in — All rights reserved.</div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+
+    <script>
+        const CATEGORY_ICONS = {
+            Action: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+            Adventure: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>',
+            Arcade: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10" r="1"/><circle cx="18" cy="14" r="1"/></svg>',
+            Racing: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+            Simulation: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>',
+            Sports: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
+            Strategy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/><line x1="2" y1="20" x2="2.01" y2="20"/></svg>',
+            Tools: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+            Social: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+            Productivity: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
+            Communication: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+            Entertainment: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
+            Photography: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>'
+        };
+
+        let allApps = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            trackVisit(); // Analytics
+            const cat = new URLSearchParams(window.location.search).get('cat') || 'Action';
+
+            // Show loading state
+            document.getElementById('appsGrid').innerHTML = '<div class="loading-apps">Loading apps...</div>';
+
+            try {
+                allApps = await getAllApps();
+
+                // Dynamic SEO for category
+                document.title = `${cat} Mod APKs — ModGalaxy`;
+                document.getElementById('metaDesc').content = `Download the best ${cat} mod APKs for Android. Free and safe on ModGalaxy.in`;
+                document.getElementById('metaKeywords').content = `${cat} mod apk, ${cat} games download, ${cat} android mods, modgalaxy`;
+                document.getElementById('canonicalLink').href = `https://modgalaxy.in/category.html?cat=${cat}`;
+                document.getElementById('ogTitle').content = `${cat} Mod APKs — ModGalaxy`;
+                document.getElementById('ogDesc').content = `Download ${cat} mod APKs for Android.`;
+                document.getElementById('ogUrl').content = `https://modgalaxy.in/category.html?cat=${cat}`;
+                document.getElementById('twTitle').content = `${cat} Mod APKs — ModGalaxy`;
+                document.getElementById('twDesc').content = `Browse ${cat} mods on ModGalaxy.`;
+
+                // Get unique categories and sort
+                const cats = [...new Set(allApps.map(a => a.category))].sort();
+
+                // Render category tabs with icons
+                document.getElementById('categoryTabs').innerHTML = cats.map(c =>
+                    `<a href="category.html?cat=${c}" class="category-tab ${c === cat ? 'active' : ''}">
+                        ${CATEGORY_ICONS[c] || '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>'}
+                        ${c}
+                    </a>`
+                ).join('');
+
+                // Filter apps by current category
+                const filtered = allApps.filter(a => a.category === cat);
+
+                // Update category header
+                document.getElementById('categoryTitleText').textContent = cat;
+                document.getElementById('catBreadcrumb').textContent = cat;
+                document.getElementById('categoryCount').textContent = `${filtered.length} app${filtered.length !== 1 ? 's' : ''}`;
+
+                // Update category description based on count
+                const descElement = document.getElementById('categoryDescription');
+                if (filtered.length === 0) {
+                    descElement.textContent = 'No apps available in this category yet';
+                } else {
+                    descElement.textContent = `Discover ${filtered.length} modded app${filtered.length !== 1 ? 's' : ''} in this category`;
+                }
+
+                // Update page title
+                document.title = `${cat} — ModGalaxy`;
+
+                // Render apps grid
+                document.getElementById('appsGrid').innerHTML = filtered.length ? filtered.map(app => `
+                    <a href="details.html?id=${app.id}" class="app-card">
+                        <img src="${app.icon}" alt="${app.name}" class="app-card-icon" loading="lazy">
+                        <div class="app-card-name">${app.name}</div>
+                        <div class="app-card-dev">${app.developer}</div>
+                        <div class="app-card-rating">${app.rating}</div>
+                    </a>
+                `).join('') : `
+                    <div class="empty-state">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                        </svg>
+                        <p>No apps found in this category</p>
+                    </div>
+                `;
+
+            } catch (e) {
+                console.error('Firestore error:', e);
+                document.getElementById('appsGrid').innerHTML = `
+                    <div class="empty-state">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="8" x2="12" y2="12"/>
+                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                        <p>Failed to load apps. Please try again.</p>
+                    </div>
+                `;
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.trim().toLowerCase();
+                // Implement search if needed
+            });
+        }
+
+        // Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('menuOverlay');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+
+            // Populate if empty
+            if (menu.classList.contains('active') && !document.getElementById('mobileCatGrid').hasChildNodes()) {
+                const cats = ['Action', 'Arcade', 'Adventure', 'Racing', 'Simulation', 'Sports', 'Strategy', 'Tools', 'Social', 'Productivity'];
+                document.getElementById('mobileCatGrid').innerHTML = cats.map(c => `<a href="category.html?cat=${c}" class="mobile-cat-item">${c}</a>`).join('');
+            }
+        }
+    </script>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-title">Menu</div>
+            <button class="mobile-menu-close" onclick="toggleMenu()">✕</button>
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Navigation</div>
+                <a href="index.html" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Home
+                </a>
+                <a href="category.html?cat=Action" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Games
+                </a>
+                <a href="category.html?cat=Tools" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                        </path>
+                    </svg>
+                    Apps
+                </a>
+            </div>
+
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Explore Categories</div>
+                <div class="mobile-cat-grid" id="mobileCatGrid"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

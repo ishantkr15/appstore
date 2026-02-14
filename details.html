@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Details — ModGalaxy</title>
+    <meta name="description" id="metaDesc" content="Download the latest mod APK on ModGalaxy. Free, safe, and fast.">
+    <meta name="keywords" id="metaKeywords" content="mod apk, download apk, android mod, modgalaxy">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="ModGalaxy">
+    <link rel="canonical" id="canonicalLink" href="https://modgalaxy.in/details.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" id="ogTitle" content="App Details — ModGalaxy">
+    <meta property="og:description" id="ogDesc" content="Download the latest mod APK on ModGalaxy.">
+    <meta property="og:url" id="ogUrl" content="https://modgalaxy.in/details.html">
+    <meta property="og:site_name" content="ModGalaxy">
+    <meta property="og:image" id="ogImage" content="">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" id="twTitle" content="App Details — ModGalaxy">
+    <meta name="twitter:description" id="twDesc" content="Download the latest mod APK on ModGalaxy.">
+    <meta name="twitter:image" id="twImage" content="">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Enhanced UI Styles */
+        :root {
+            --primary: #00c853;
+            --primary-dark: #00a844;
+            --primary-light: #e8f5e9;
+            --accent: #3b82f6;
+            --warning: #f59e0b;
+            --purple: #8b5cf6;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --border-light: #e5e7eb;
+            --bg-light: #f9fafb;
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            --hover-shadow: 0 20px 30px -10px rgba(0, 200, 83, 0.15);
+        }
+
+        /* Loading Animation */
+        #loading {
+            text-align: center;
+            padding: 80px;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        #loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-light);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-top: 30px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        /* Breadcrumb Enhancement */
+        .breadcrumb {
+            max-width: 1300px;
+            margin: 30px auto 0;
+            padding: 0 30px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .breadcrumb a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .breadcrumb a::after {
+            content: '›';
+            margin: 0 8px;
+            color: var(--text-light);
+        }
+
+        .breadcrumb span {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* App Header Enhancement */
+        .app-header {
+            background: linear-gradient(135deg, var(--primary-light) 0%, #ffffff 100%);
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0, 200, 83, 0.1);
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-header:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .app-header-icon {
+            width: 130px;
+            height: 130px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px -10px rgba(0, 200, 83, 0.3);
+            transition: transform 0.3s;
+            border: 3px solid white;
+        }
+
+        .app-header:hover .app-header-icon {
+            transform: scale(1.02);
+        }
+
+        .app-header-info {
+            flex: 1;
+        }
+
+        .app-header-info h1 {
+            font-size: 2.5rem;
+            margin: 0 0 5px;
+            background: linear-gradient(135deg, var(--text-dark) 0%, #000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .app-header-meta {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .app-header-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            color: var(--warning);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .score {
+            font-weight: 700;
+            color: var(--text-dark);
+            font-size: 1.2rem;
+        }
+
+        /* Download Button Enhancement */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 20px -5px rgba(0, 200, 83, 0.4);
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .download-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px rgba(0, 200, 83, 0.6);
+        }
+
+        /* Section Headers Enhancement */
+        .detail-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s;
+        }
+
+        .detail-section:hover {
+            box-shadow: var(--hover-shadow);
+            border-color: var(--primary);
+        }
+
+        .detail-section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 12px;
+        }
+
+        .detail-section-title svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* What's New Enhancement */
+        .whats-new-item {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background: var(--bg-light);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            color: var(--text-dark);
+            transition: transform 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .whats-new-item::before {
+            content: '✨';
+            font-size: 1.1rem;
+        }
+
+        .whats-new-item:hover {
+            background: var(--primary-light);
+            transform: translateX(5px);
+        }
+
+        /* Screenshots Enhancement */
+        .screenshots-row {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0 20px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) var(--border-light);
+        }
+
+        .screenshots-row::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .screenshots-row::-webkit-scrollbar-track {
+            background: var(--border-light);
+            border-radius: 10px;
+        }
+
+        .screenshots-row::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        .screenshot-img {
+            height: 280px;
+            width: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .screenshot-img:hover {
+            transform: scale(1.05);
+            border-color: var(--primary);
+            box-shadow: 0 20px 30px -5px rgba(0, 200, 83, 0.3);
+        }
+
+        /* Tags Enhancement */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: var(--bg-light);
+            color: var(--text-dark);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px -5px var(--primary);
+        }
+
+        /* Info Table Enhancement */
+        .sidebar-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s;
+        }
+
+        .sidebar-card:hover {
+            box-shadow: var(--hover-shadow);
+            border-color: var(--primary);
+        }
+
+        .sidebar-card-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 12px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 8px;
+        }
+
+        .info-table td {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-light);
+        }
+
+        .info-table td:first-child {
+            color: var(--text-light);
+            font-weight: 500;
+            width: 35%;
+        }
+
+        .info-table td:last-child {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        /* Similar Apps Enhancement */
+        .similar-app {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .similar-app:hover {
+            background: var(--primary-light);
+            border-color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .similar-app-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .similar-app-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 3px;
+        }
+
+        .similar-app-meta {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* Rating Stars Enhancement */
+        .rate-star {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: inline-block;
+            color: #d0d0d0;
+            user-select: none;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+
+        .rate-star:hover,
+        .rate-star.hovered {
+            transform: scale(1.3) rotate(5deg);
+            color: #fbbf24 !important;
+            text-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+        }
+
+        .rate-star.active {
+            color: #f59e0b;
+        }
+
+        .rate-star.my-rate {
+            color: #00c853 !important;
+            text-shadow: 0 0 15px rgba(0, 200, 83, 0.5);
+        }
+
+        #ratingStars {
+            display: inline-flex;
+            gap: 8px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: var(--bg-light);
+            border-radius: 50px;
+        }
+
+        /* Animation for content load */
+        .hidden {
+            display: none !important;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .app-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-header-rating {
+                justify-content: center;
+            }
+
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .breadcrumb {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">MOD</span>Galaxy
+            </a>
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input type="text" placeholder="Search apps and games...">
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="category.html?cat=Action">Games</a>
+                <a href="category.html?cat=Tools">Apps</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb" id="breadcrumb">Loading...</div>
+
+    <div id="loading">Loading app details...</div>
+
+    <div class="details-layout hidden fade-in" id="detailsContent">
+
+        <!-- Main Column -->
+        <div class="details-main">
+
+            <!-- App Header -->
+            <div class="app-header" id="appHeader"></div>
+
+            <!-- What's New -->
+            <div class="detail-section" id="whatsNewSection">
+                <div class="detail-section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 20h9" />
+                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                    </svg>
+                    What's New
+                </div>
+                <div id="whatsNew">
+                    <div class="whats-new-item">Performance improvements and bug fixes</div>
+                    <div class="whats-new-item">Optimized for latest Android devices</div>
+                    <div class="whats-new-item">Security patches applied</div>
+                </div>
+            </div>
+
+            <!-- Required App -->
+            <div class="detail-section hidden" id="reqAppSection">
+                <div class="detail-section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    Required App
+                </div>
+                <div id="reqAppContent"></div>
+            </div>
+
+            <!-- Reviews & Ratings -->
+            <div class="detail-section">
+                <div class="detail-section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    Reviews & Ratings
+                </div>
+
+                <!-- Rating Summary -->
+                <div id="ratingWidget" style="text-align:center;padding:20px 0;">
+                    <div style="font-size:3rem;font-weight:700;color:var(--text-dark);" id="avgRatingDisplay">0.0</div>
+                    <div id="ratingStars" style="margin:8px 0;"></div>
+                    <div id="ratingInfo" style="color:var(--text-light);font-size:0.95rem;">Loading...</div>
+                    <div id="ratingMsg"
+                        style="color:var(--primary);font-weight:600;font-size:0.95rem;margin-top:12px;padding:8px 16px;background:var(--primary-light);border-radius:30px;display:none;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="detail-section">
+                <div class="detail-section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg>
+                    Description
+                </div>
+                <p id="appDescription" style="line-height:1.8;color:#4b5563;"></p>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="detail-section" id="screenshotsSection">
+                <div class="detail-section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" />
+                    </svg>
+                    Screenshots
+                </div>
+                <div class="screenshots-row" id="screenshots"></div>
+            </div>
+
+            <!-- Tags -->
+            <div class="detail-section">
+                <div class="detail-section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                        <line x1="7" y1="7" x2="7.01" y2="7" />
+                    </svg>
+                    Tags
+                </div>
+                <div class="tag-cloud" id="tagCloud"></div>
+            </div>
+
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="details-sidebar">
+            <!-- App Info -->
+            <div class="sidebar-card">
+                <div class="sidebar-card-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="16" x2="12" y2="12" />
+                        <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                    App Information
+                </div>
+                <table class="info-table" id="infoTable">
+                    <tr>
+                        <td>App ID</td>
+                        <td id="infoAppId">—</td>
+                    </tr>
+                    <tr>
+                        <td>Version</td>
+                        <td id="infoVersion">—</td>
+                    </tr>
+                    <tr>
+                        <td>Size</td>
+                        <td id="infoSize">—</td>
+                    </tr>
+                    <tr>
+                        <td>Downloads</td>
+                        <td id="infoDownloads">—</td>
+                    </tr>
+                    <tr>
+                        <td>Developer</td>
+                        <td id="infoDev">—</td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td id="infoCat">—</td>
+                    </tr>
+                    <tr>
+                        <td>Package</td>
+                        <td id="infoPkg" style="font-size:0.85rem;word-break:break-all;">—</td>
+                    </tr>
+                    <tr>
+                        <td>Updated</td>
+                        <td id="infoDate">—</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Similar Apps -->
+            <div class="sidebar-card">
+                <div class="sidebar-card-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4v16h16" />
+                        <path d="m20 10-4-4-4 4-4-4-4 4" />
+                    </svg>
+                    Similar Apps
+                </div>
+                <div id="similarApps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>ModGalaxy</h3>
+                <p>The safest place to download Mod APKs for Android.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="category.html?cat=Action">Games</a>
+                <a href="category.html?cat=Tools">Apps</a>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <a href="category.html?cat=Action">Action</a>
+                <a href="category.html?cat=Racing">Racing</a>
+                <a href="category.html?cat=Strategy">Strategy</a>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">DMCA</a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 ModGalaxy.in — All rights reserved.</div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+
+    <script>
+        // [Your existing JavaScript code remains exactly the same]
+        document.addEventListener('DOMContentLoaded', async () => {
+            trackVisit(); // Analytics
+            const params = new URLSearchParams(window.location.search);
+            const appId = params.get('id');
+
+            if (!appId) {
+                document.getElementById('loading').innerHTML = '<p>No app specified. <a href="index.html" style="color:var(--primary);">Go Home</a></p>';
+                return;
+            }
+
+            try {
+                const app = await getAppById(appId);
+                if (!app) {
+                    document.getElementById('loading').innerHTML = '<p>App not found. <a href="index.html" style="color:var(--primary);">Go Home</a></p>';
+                    return;
+                }
+                trackAppView(appId); // Track app view
+                const allApps = await getAllApps();
+                renderDetails(app, allApps);
+            } catch (e) {
+                console.error('Firestore error:', e);
+                document.getElementById('loading').innerHTML = '<p>Failed to load data.</p>';
+            }
+        });
+
+        function renderDetails(app, allApps) {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('detailsContent').classList.remove('hidden');
+
+            // Dynamic SEO
+            const seoTitle = `${app.name} v${app.version || ''} Mod APK Download — ModGalaxy`;
+            const seoDesc = app.seoDescription || app.description || `Download ${app.name} Mod APK for Android. ${app.category} — free and safe on ModGalaxy.in`;
+            const seoKeys = app.seoKeywords || `${app.name}, ${app.name} mod apk, ${app.name} download, ${app.category} mod, android mod apk`;
+            const seoUrl = `https://modgalaxy.in/details.html?id=${app.id}`;
+
+            document.title = seoTitle;
+            document.getElementById('metaDesc').content = seoDesc;
+            document.getElementById('metaKeywords').content = seoKeys;
+            document.getElementById('canonicalLink').href = seoUrl;
+            document.getElementById('ogTitle').content = seoTitle;
+            document.getElementById('ogDesc').content = seoDesc;
+            document.getElementById('ogUrl').content = seoUrl;
+            document.getElementById('ogImage').content = app.icon || '';
+            document.getElementById('twTitle').content = seoTitle;
+            document.getElementById('twDesc').content = seoDesc;
+            document.getElementById('twImage').content = app.icon || '';
+
+            // JSON-LD for SoftwareApplication
+            const ldJson = document.createElement('script');
+            ldJson.type = 'application/ld+json';
+            ldJson.textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": app.name,
+                "operatingSystem": "Android",
+                "applicationCategory": app.category,
+                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                "aggregateRating": { "@type": "AggregateRating", "ratingValue": app.rating || "4.5", "ratingCount": app.downloads || "1000" },
+                "description": seoDesc,
+                "image": app.icon || '',
+                "url": seoUrl
+            });
+            document.head.appendChild(ldJson);
+
+            // Breadcrumb
+            document.getElementById('breadcrumb').innerHTML = `
+                <a href="index.html">Home</a>
+                <a href="category.html?cat=${app.category}">${app.category}</a>
+                <span style="color:var(--text-dark);">${app.name}</span>
+            `;
+
+            // Generate stars
+            const rating = parseFloat(app.rating) || 4.5;
+            const fullStars = Math.floor(rating);
+            const starsStr = '★'.repeat(fullStars) + (rating % 1 >= 0.5 ? '½' : '');
+
+            // App Header
+            document.getElementById('appHeader').innerHTML = `
+                <img src="${app.icon}" alt="${app.name}" class="app-header-icon">
+                <div class="app-header-info">
+                    <h1>${app.name}</h1>
+                    <div class="app-header-meta">${app.developer} • ${app.size}</div>
+                    <div class="app-header-rating">
+                        <span class="stars">${starsStr}</span>
+                        <span class="score">${app.rating}</span>
+                        <span style="color:var(--text-light);font-size:0.85rem;">(${app.downloads || '10K+'} downloads)</span>
+                    </div>
+                    <a href="${app.downloadUrl || '#'}" class="download-btn" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.17v6h5V9h3.17L12 2z"/></svg>
+                        Download APK (${app.size})
+                    </a>
+                    ${app.appId ? `<div style="margin-top:10px;font-size:0.82rem;color:var(--text-light);">App ID: ${app.appId}</div>` : ''}
+                </div>
+            `;
+
+            // Screenshots
+            if (app.showScreenshots !== false) {
+                document.getElementById('screenshotsSection').style.display = 'block';
+                const sc = document.getElementById('screenshots');
+                if (app.screenshots && app.screenshots.length > 0) {
+                    sc.innerHTML = app.screenshots.map(s => `<img src="${s}" class="screenshot-img" alt="Screenshot">`).join('');
+                } else {
+                    sc.innerHTML = `
+                        <img src="https://via.placeholder.com/200x350/f5f7fa/888?text=Screen+1" class="screenshot-img">
+                        <img src="https://via.placeholder.com/200x350/f5f7fa/888?text=Screen+2" class="screenshot-img">
+                        <img src="https://via.placeholder.com/200x350/f5f7fa/888?text=Screen+3" class="screenshot-img">
+                    `;
+                }
+            } else {
+                document.getElementById('screenshotsSection').style.display = 'none';
+            }
+
+            // Description
+            document.getElementById('appDescription').textContent = app.description || 'No description available.';
+
+            // Tags
+            const tags = [app.category, 'APK', 'Mod', 'Free', 'Android', 'Download', app.developer];
+            document.getElementById('tagCloud').innerHTML = tags.map(t => `<a href="#" class="tag">${t}</a>`).join('');
+
+            // Info Table
+            document.getElementById('infoAppId').textContent = app.appId || '—';
+            document.getElementById('infoVersion').textContent = app.version;
+            document.getElementById('infoSize').textContent = app.size;
+            document.getElementById('infoDev').textContent = app.developer;
+            document.getElementById('infoCat').textContent = app.category;
+            document.getElementById('infoPkg').textContent = app.package || '—';
+            document.getElementById('infoDate').textContent = app.dateAdded || 'Recently';
+            document.getElementById('infoDownloads').textContent = app.downloads || '10K+';
+
+            // Required App
+            // Required App Section
+            const reqSection = document.getElementById('reqAppSection');
+            if (app.showRequiredTo !== false) {
+                const reqApp = allApps.find(a => a.id === app.requiredTo);
+                const reqContent = document.getElementById('reqAppContent');
+
+                if (reqApp) {
+                    reqContent.innerHTML = `
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);padding:12px;border-radius:12px;border:1px solid var(--border);">
+                            <img src="${reqApp.icon}" style="width:48px;height:48px;border-radius:10px;object-fit:cover;">
+                            <div>
+                                <div style="font-weight:600;margin-bottom:4px;color:var(--text-dark);">${reqApp.name}</div>
+                                <a href="details.html?id=${reqApp.id}" style="color:var(--primary);font-weight:600;text-decoration:none;font-size:0.9rem;">
+                                    View Required App →
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                    reqSection.classList.remove('hidden');
+                } else if (app.requiredTo) {
+                    reqContent.innerHTML = `<p style="color:var(--text-light);">${app.requiredTo}</p>`;
+                    reqSection.classList.remove('hidden');
+                } else {
+                    reqSection.classList.add('hidden');
+                }
+            } else {
+                reqSection.classList.add('hidden');
+            }
+
+            // Similar Apps
+            const similar = allApps.filter(a => a.category === app.category && a.id !== app.id).slice(0, 5);
+            const sc2 = document.getElementById('similarApps');
+            if (similar.length > 0) {
+                sc2.innerHTML = similar.map(s => `
+                    <a href="details.html?id=${s.id}" class="similar-app">
+                        <img src="${s.icon}" alt="${s.name}" class="similar-app-icon">
+                        <div>
+                            <div class="similar-app-name">${s.name}</div>
+                            <div class="similar-app-meta">${s.developer} • ★ ${s.rating}</div>
+                        </div>
+                    </a>
+                `).join('');
+            } else {
+                sc2.innerHTML = '<p style="color:#888;font-size:0.9rem;">No similar apps found.</p>';
+            }
+
+            // Load User Rating Widget
+            loadRatingWidget(app.id || app._docId);
+        }
+
+        async function loadRatingWidget(appSlug) {
+            const container = document.getElementById('ratingStars');
+            const info = document.getElementById('ratingInfo');
+            try {
+                const rd = await getAppRating(appSlug);
+                renderStars(container, rd.myRating, appSlug);
+                info.textContent = rd.count > 0 ? `${rd.average} ★ average from ${rd.count} rating${rd.count > 1 ? 's' : ''}` : 'Be the first to rate this app!';
+                // Also update the big display
+                const avgDisplay = document.getElementById('avgRatingDisplay');
+                if (avgDisplay) avgDisplay.textContent = rd.count > 0 ? rd.average : '0.0';
+            } catch (e) {
+                renderStars(container, 0, appSlug);
+                info.textContent = 'Rate this app!';
+            }
+        }
+
+        function renderStars(container, myRating, appSlug) {
+            container.innerHTML = '';
+            for (let i = 1; i <= 5; i++) {
+                const star = document.createElement('span');
+                star.className = 'rate-star' + (i <= myRating ? ' active my-rate' : '');
+                star.style.cursor = 'pointer';
+                star.style.fontSize = '2rem';
+                star.style.color = '#e5e7eb'; // default gray
+                star.style.transition = 'color 0.2s';
+                star.textContent = '★';
+                if (i <= myRating) star.style.color = '#f59e0b';
+
+                star.addEventListener('mouseenter', () => {
+                    // Highlight up to this star
+                    Array.from(container.children).forEach((s, idx) => {
+                        s.style.color = idx < i ? '#f59e0b' : '#e5e7eb';
+                    });
+                });
+
+                star.addEventListener('mouseleave', () => {
+                    // Reset to myRating
+                    Array.from(container.children).forEach((s, idx) => {
+                        s.style.color = s.classList.contains('active') ? '#f59e0b' : '#e5e7eb';
+                    });
+                });
+
+                star.addEventListener('click', () => doRate(appSlug, i));
+                container.appendChild(star);
+            }
+            container.addEventListener('mouseleave', () => {
+                Array.from(container.children).forEach((s) => {
+                    s.style.color = s.classList.contains('active') ? '#f59e0b' : '#e5e7eb';
+                });
+            });
+        }
+
+        async function doRate(appSlug, stars) {
+            const msg = document.getElementById('ratingMsg');
+            const info = document.getElementById('ratingInfo');
+            if (msg) {
+                msg.style.display = 'block';
+                msg.style.color = '#f59e0b'; // warning/pending color
+                msg.textContent = 'Submitting...';
+            }
+
+            try {
+                const result = await submitRating(appSlug, stars);
+                if (msg) {
+                    msg.style.color = '#00c853'; // success color
+                    msg.textContent = `✅ Thank you! You rated ${stars} star${stars > 1 ? 's' : ''}.`;
+                }
+                info.textContent = `${result.average} ★ average from ${result.count} rating${result.count > 1 ? 's' : ''}`;
+                document.getElementById('avgRatingDisplay').textContent = result.average;
+                renderStars(document.getElementById('ratingStars'), stars, appSlug);
+                setTimeout(() => { if (msg) msg.style.display = 'none'; }, 3000);
+            } catch (e) {
+                console.error(e);
+                if (msg) {
+                    msg.style.color = '#ef4444';
+                    msg.textContent = '❌ Failed to submit rating.';
+                    setTimeout(() => { msg.style.display = 'none'; }, 3000);
+                }
+            }
+        }
+    </script>
+    </script>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-title">Menu</div>
+            <button class="mobile-menu-close" onclick="toggleMenu()">&times;</button>
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Navigation</div>
+                <a href="index.html" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Home
+                </a>
+                <a href="category.html?cat=Action" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Games
+                </a>
+                <a href="category.html?cat=Tools" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                        </path>
+                    </svg>
+                    Apps
+                </a>
+            </div>
+
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Explore Categories</div>
+                <div class="mobile-cat-grid" id="mobileCatGrid">
+                    <!-- JS will populate -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('menuOverlay');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+
+            // Populate if empty
+            if (menu.classList.contains('active') && !document.getElementById('mobileCatGrid').hasChildNodes()) {
+                const cats = ['Action', 'Arcade', 'Adventure', 'Racing', 'Simulation', 'Sports', 'Strategy', 'Tools', 'Social', 'Productivity'];
+                document.getElementById('mobileCatGrid').innerHTML = cats.map(c => `<a href="category.html?cat=${c}" class="mobile-cat-item">${c}</a>`).join('');
+            }
+        }
+    </script>
+</body>
+
+</html>

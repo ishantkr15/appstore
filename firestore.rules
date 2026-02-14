@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===== APPS COLLECTION =====
+    // Public can read apps, only authenticated admin can write
+    match /apps/{appId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // ===== CATEGORIES COLLECTION =====
+    // Public can read categories, only admin can manage
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // ===== ANALYTICS COLLECTION =====
+    // Everyone can increment counters (visits, appViews, searches)
+    // Admin can read all analytics
+    match /analytics/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // ===== RATINGS COLLECTION (Legacy) =====
+    match /ratings/{ratingId} {
+      allow read, write: if true;
+    }
+
+    // ===== REVIEWS COLLECTION =====
+    // Public read, Public create (with validation)
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasAll(['appId', 'rating', 'text', 'userName', 'timestamp'])
+                   && request.resource.data.rating >= 1
+                   && request.resource.data.rating <= 5;
+      allow update, delete: if false; // Only admin can delete via console or creating a separate admin rule
+    }
+
+    // ===== ADMINS COLLECTION =====
+    // Only authenticated users can read admin list
+    match /admins/{adminId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+  }
+}

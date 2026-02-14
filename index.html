@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModGalaxy — Download Mod APKs for Android | Free & Safe</title>
+    <meta name="description"
+        content="Download the latest Mod APKs for Android. Premium unlocked games, modded apps, and more — fast, safe, and 100% free on ModGalaxy.in">
+    <meta name="keywords"
+        content="mod apk, modded games, android mods, free apk download, premium apk, modgalaxy, mod apps, unlocked games, android games download">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="ModGalaxy">
+    <link rel="canonical" href="https://modgalaxy.in/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ModGalaxy — Download Mod APKs for Android">
+    <meta property="og:description"
+        content="Download the latest Mod APKs for Android. Premium unlocked games, modded apps — fast, safe, and free.">
+    <meta property="og:url" content="https://modgalaxy.in/">
+    <meta property="og:site_name" content="ModGalaxy">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ModGalaxy — Download Mod APKs for Android">
+    <meta name="twitter:description" content="Download the latest Mod APKs for Android. Fast, safe, and free.">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ModGalaxy",
+        "url": "https://modgalaxy.in/",
+        "description": "Download the latest Mod APKs for Android. Premium unlocked games and modded apps.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://modgalaxy.in/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <style>
+        /* Professional Homepage Theme */
+        :root {
+            --primary: #00c853;
+            --primary-dark: #00a844;
+            --primary-light: #e8f5e9;
+            --primary-soft: rgba(0, 200, 83, 0.1);
+            --primary-gradient: linear-gradient(135deg, #00c853 0%, #00a844 100%);
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --text-lighter: #94a3b8;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e0;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --radius-sm: 6px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .navbar {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--text-dark);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--text-dark) 0%, #000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            white-space: nowrap;
+        }
+
+        .logo-icon {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .search-wrapper {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bg-light);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 10px 16px;
+            transition: all 0.2s;
+        }
+
+        .search-bar:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-soft);
+            background: var(--bg-white);
+        }
+
+        .search-bar input {
+            border: none;
+            background: none;
+            outline: none;
+            width: 100%;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .search-bar input::placeholder {
+            color: var(--text-lighter);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 8px 16px;
+            border-radius: var(--radius-md);
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .hot-tags {
+            max-width: 1300px;
+            margin: 10px auto 0;
+            padding: 0 30px 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .hot-tag {
+            padding: 4px 12px;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .hot-tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        /* Category Bar */
+        .cat-bar {
+            max-width: 1300px;
+            margin: 20px auto 0;
+            padding: 0 30px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .cat-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .cat-chip:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cat-chip-icon {
+            display: inline-flex;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+        }
+
+        .cat-chip-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: currentColor;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1300px;
+            margin: 30px auto 40px;
+            padding: 0 30px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--primary);
+        }
+
+        .view-all {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.2s;
+        }
+
+        .view-all:hover {
+            gap: 8px;
+        }
+
+        /* Scroll Row */
+        .scroll-row {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding: 8px 0 16px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) var(--border);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .scroll-row::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .scroll-row::-webkit-scrollbar-track {
+            background: var(--border);
+            border-radius: 10px;
+        }
+
+        .scroll-row::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* App Card */
+        .app-card {
+            min-width: 160px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 16px 12px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .app-card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--radius-lg);
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s;
+            border: 2px solid var(--bg-white);
+        }
+
+        .app-card:hover .app-card-icon {
+            transform: scale(1.05);
+        }
+
+        .app-card-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            color: var(--text-dark);
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .app-card-dev {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .app-card-rating {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .app-card-rating::before {
+            content: '★';
+            color: #f59e0b;
+            font-size: 0.85rem;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .sb-item {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 24px 20px;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .sb-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .sb-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 12px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+
+        .sb-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: currentColor;
+        }
+
+        .sb-val {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .sb-lbl {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Grid Dense */
+        .grid-dense {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .grid-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .grid-card:hover {
+            transform: translateX(4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .grid-card-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .grid-card-info {
+            flex: 1;
+        }
+
+        .grid-card-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 2px;
+        }
+
+        .grid-card-dev {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+
+        .grid-card-rating {
+            color: var(--primary-dark);
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--primary-light);
+            padding: 2px 8px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .grid-card-rating::before {
+            content: '★';
+            color: #f59e0b;
+            margin-right: 2px;
+        }
+
+        /* Editor's Picks */
+        .editor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+        }
+
+        .editor-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .editor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-gradient);
+        }
+
+        .editor-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .editor-card-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .editor-card-info {
+            flex: 1;
+        }
+
+        .editor-card-name {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .editor-card-dev {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+
+        .editor-card-rating {
+            color: #f59e0b;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .editor-badge {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* Rankings */
+        .rank-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .rank-heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .rank-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .rank-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .rank-card:hover {
+            transform: translateX(4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .rank-num {
+            width: 28px;
+            height: 28px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .rank-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+        }
+
+        .rank-card-info {
+            flex: 1;
+        }
+
+        .rank-card-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 2px;
+        }
+
+        .rank-card-meta {
+            font-size: 0.7rem;
+            color: var(--text-light);
+        }
+
+        /* Trending Pills */
+        .trending-pills {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .trending-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 20px;
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: 40px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .trending-pill:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .trending-pill svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-white);
+            border-top: 1px solid var(--border);
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+
+        .footer-col p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            max-width: 1300px;
+            margin: 30px auto 0;
+            padding: 20px 30px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-lighter);
+            font-size: 0.85rem;
+        }
+
+        /* Search Overlay */
+        #searchResults {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 200;
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        #searchResults>div {
+            background: var(--bg-white);
+            width: 600px;
+            max-height: 70vh;
+            border-radius: var(--radius-lg);
+            overflow-y: auto;
+            padding: 24px;
+            position: relative;
+            box-shadow: var(--shadow-xl);
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #searchResults button {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        #searchResults button:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 150;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 280px;
+            height: 100%;
+            background: var(--bg-white);
+            z-index: 151;
+            transition: left 0.3s ease;
+            box-shadow: var(--shadow-xl);
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .mobile-menu-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .mobile-menu-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .mobile-menu-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .mobile-menu-content {
+            padding: 20px;
+        }
+
+        .mobile-menu-section {
+            margin-bottom: 24px;
+        }
+
+        .mobile-menu-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-lighter);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .mobile-menu-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all 0.2s;
+            margin-bottom: 4px;
+        }
+
+        .mobile-menu-link:hover {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .mobile-menu-link.active {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .mobile-cat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .mobile-cat-item {
+            padding: 8px;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.85rem;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .mobile-cat-item:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Hidden class */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .navbar {
+                padding: 12px 20px;
+            }
+
+            .search-wrapper {
+                max-width: none;
+            }
+
+            .hot-tags {
+                padding: 0 20px 10px;
+                display: none !important;
+            }
+
+            .cat-bar {
+                padding: 0 20px;
+                display: none !important;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .stats-banner {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .editor-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .rank-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            #searchResults>div {
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-banner {
+                grid-template-columns: 1fr;
+            }
+
+            .app-card {
+                min-width: 140px;
+            }
+
+            .app-card-icon {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <a href="index.html" class="logo"><span class="logo-icon">MOD</span>Galaxy</a>
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search apps and games...">
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="category.html?cat=Action">Games</a>
+                <a href="category.html?cat=Tools">Apps</a>
+            </div>
+        </div>
+        <div class="hot-tags" id="hotTags"></div>
+    </header>
+
+    <!-- Category Bar -->
+    <div class="cat-bar" id="catBar"></div>
+
+    <div class="container">
+        <!-- Top Download Games -->
+        <div class="section" id="topGames">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 0 1 10 10c0 5-4 8-10 8-6 0-10-3-10-8 0-5 4-10 10-10z" />
+                        <path d="M12 7v5l3 3" />
+                    </svg>
+                    Top Download Games
+                </h2>
+                <a href="category.html?cat=Action" class="view-all">View All →</a>
+            </div>
+            <div class="scroll-row" id="topGamesRow"></div>
+        </div>
+
+        <!-- Top Download Apps -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                        <line x1="12" y1="18" x2="12.01" y2="18" />
+                    </svg>
+                    Top Download Apps
+                </h2>
+                <a href="category.html?cat=Tools" class="view-all">View All →</a>
+            </div>
+            <div class="scroll-row" id="topAppsRow"></div>
+        </div>
+
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="sb-item">
+                <div class="sb-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                        <line x1="12" y1="22.08" x2="12" y2="12" />
+                    </svg>
+                </div>
+                <div class="sb-val" id="sbApps">0</div>
+                <div class="sb-lbl">Apps Available</div>
+            </div>
+            <div class="sb-item">
+                <div class="sb-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 7h-4.5A2.5 2.5 0 0 1 13 4.5V3" />
+                        <path d="M4 7h4.5A2.5 2.5 0 0 0 11 4.5V3" />
+                        <path d="M4 17h4.5A2.5 2.5 0 0 1 11 19.5V21" />
+                        <path d="M20 17h-4.5A2.5 2.5 0 0 0 13 19.5V21" />
+                        <line x1="8" y1="3" x2="16" y2="3" />
+                        <line x1="8" y1="21" x2="16" y2="21" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                    </svg>
+                </div>
+                <div class="sb-val" id="sbCats">0</div>
+                <div class="sb-lbl">Categories</div>
+            </div>
+            <div class="sb-item">
+                <div class="sb-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                </div>
+                <div class="sb-val">1.2M+</div>
+                <div class="sb-lbl">Total Downloads</div>
+            </div>
+            <div class="sb-item">
+                <div class="sb-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <polyline points="9 12 11 14 15 10" />
+                    </svg>
+                </div>
+                <div class="sb-val">100%</div>
+                <div class="sb-lbl">Safe & Verified</div>
+            </div>
+        </div>
+
+        <!-- Popular Update Games -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14 0-5.5 3-6.5 1 1.5 2 4.5 0 7-.5.5-1.5 1-1.5 2 0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5c0-1-.5-1.5-1-2.5 3.5 1 4.5 4.5 3 7a4 4 0 0 1-7 0z" />
+                    </svg>
+                    Popular Update Games
+                </h2>
+                <a href="category.html?cat=Action" class="view-all">View All →</a>
+            </div>
+            <div class="grid-dense" id="popularGamesGrid"></div>
+        </div>
+
+        <!-- Editor's Picks -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    Editor's Picks
+                </h2>
+            </div>
+            <div class="editor-grid" id="editorPicks"></div>
+        </div>
+
+        <!-- Popular Update Apps -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                        <line x1="12" y1="18" x2="12.01" y2="18" />
+                        <circle cx="19" cy="5" r="2" />
+                    </svg>
+                    Popular Update Apps
+                </h2>
+                <a href="category.html?cat=Tools" class="view-all">View All →</a>
+            </div>
+            <div class="grid-dense" id="popularAppsGrid"></div>
+        </div>
+
+        <!-- Rankings -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                        <path d="M4 22h16" />
+                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22" />
+                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22" />
+                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                    </svg>
+                    Top Ranked
+                </h2>
+            </div>
+            <div class="rank-grid">
+                <div>
+                    <h3 class="rank-heading">Top Games</h3>
+                    <div class="rank-list" id="rankGames"></div>
+                </div>
+                <div>
+                    <h3 class="rank-heading">Top Apps</h3>
+                    <div class="rank-list" id="rankApps"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trending -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                        <polyline points="17 6 23 6 23 12" />
+                    </svg>
+                    Trending Categories
+                </h2>
+            </div>
+            <div class="trending-pills" id="trendingPills"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>ModGalaxy</h3>
+                <p>The safest place to download Mod APKs for Android. All files are verified and virus-free. Trusted by
+                    millions.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="category.html?cat=Action">Games</a>
+                <a href="category.html?cat=Tools">Apps</a>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <a href="category.html?cat=Action">Action</a>
+                <a href="category.html?cat=Arcade">Arcade</a>
+                <a href="category.html?cat=Racing">Racing</a>
+                <a href="category.html?cat=Strategy">Strategy</a>
+                <a href="category.html?cat=Social">Social</a>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">DMCA</a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 ModGalaxy.in — All rights reserved.</div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div id="searchResults" class="hidden">
+        <div>
+            <button onclick="document.getElementById('searchResults').classList.add('hidden')">✕</button>
+            <h3 style="margin-bottom:18px;font-size:1.1rem;color:var(--text-dark);">Search Results</h3>
+            <div id="searchResultsList"></div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+
+    <script>
+        const GAME_CATS = ['Action', 'Adventure', 'Arcade', 'Racing', 'Simulation', 'Sports', 'Strategy'];
+        const APP_CATS = ['Tools', 'Social', 'Productivity', 'Communication', 'Entertainment', 'Photography'];
+        const CAT_ICONS = {
+            Action: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+            Adventure: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>',
+            Arcade: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10" r="1"/><circle cx="18" cy="14" r="1"/></svg>',
+            Racing: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+            Simulation: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>',
+            Sports: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
+            Strategy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/><line x1="2" y1="20" x2="2.01" y2="20"/></svg>',
+            Tools: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+            Social: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+            Productivity: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
+            Communication: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+            Entertainment: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
+            Photography: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>'
+        };
+        let allApps = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            trackVisit(); // Analytics
+            try {
+                allApps = await getAllApps();
+                render();
+            } catch (e) { console.error('Firestore error:', e); }
+        });
+
+        function render() {
+            const games = allApps.filter(a => GAME_CATS.includes(a.category));
+            const apps = allApps.filter(a => APP_CATS.includes(a.category));
+            const cats = [...new Set(allApps.map(a => a.category))];
+
+            // Stats
+            const sbApps = document.getElementById('sbApps');
+            if (sbApps) sbApps.textContent = allApps.length + '+';
+
+            const sbCats = document.getElementById('sbCats');
+            if (sbCats) sbCats.textContent = cats.length;
+
+            // Hot tags
+            document.getElementById('hotTags').innerHTML = allApps.slice(0, 8).map(a => `<a href="details.html?id=${a.id}" class="hot-tag">${a.name}</a>`).join('');
+
+            // Category bar
+            document.getElementById('catBar').innerHTML = cats.map(c => `<a href="category.html?cat=${c}" class="cat-chip"><span class="cat-chip-icon">${CAT_ICONS[c] || '📁'}</span>${c}</a>`).join('');
+
+            // Horizontal scroll rows
+            scrollRow('topGamesRow', games.slice(0, 12));
+            scrollRow('topAppsRow', apps.slice(0, 12));
+
+            // Dense grids
+            denseGrid('popularGamesGrid', games.slice(0, 8));
+            denseGrid('popularAppsGrid', apps.slice(0, 8));
+
+            // Editor's Picks (top rated)
+            const top = allApps.slice().sort((a, b) => (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0));
+            const ep = document.getElementById('editorPicks');
+            ep.innerHTML = top.slice(0, 6).map(a => `
+            <a href="details.html?id=${a.id}" class="editor-card">
+                <img src="${a.icon}" class="editor-card-icon" alt="${a.name}">
+                <div class="editor-card-info">
+                    <div class="editor-card-name">${a.name}</div>
+                    <div class="editor-card-dev">${a.developer}</div>
+                    <span class="editor-card-rating">★ ${a.rating}</span>
+                </div>
+                <span class="editor-badge">PICK</span>
+            </a>
+        `).join('');
+
+            // Rankings
+            rankList('rankGames', games.slice(0, 5));
+            rankList('rankApps', apps.slice(0, 5));
+
+            // Trending
+            document.getElementById('trendingPills').innerHTML = cats.map(c => `<a href="category.html?cat=${c}" class="trending-pill">${CAT_ICONS[c] || ''} ${c}</a>`).join('');
+        }
+
+        function scrollRow(id, items) {
+            document.getElementById(id).innerHTML = items.map(a => `
+            <a href="details.html?id=${a.id}" class="app-card">
+                <img src="${a.icon}" alt="${a.name}" class="app-card-icon" loading="lazy">
+                <div class="app-card-name">${a.name}</div>
+                <div class="app-card-dev">${a.developer}</div>
+                <div class="app-card-rating">${a.rating}</div>
+            </a>
+        `).join('');
+        }
+
+        function denseGrid(id, items) {
+            document.getElementById(id).innerHTML = items.map(a => `
+            <a href="details.html?id=${a.id}" class="grid-card">
+                <img src="${a.icon}" alt="${a.name}" class="grid-card-icon" loading="lazy">
+                <div class="grid-card-info">
+                    <div class="grid-card-name">${a.name}</div>
+                    <div class="grid-card-dev">${a.developer}</div>
+                    <span class="grid-card-rating">${a.rating}</span>
+                </div>
+            </a>
+        `).join('');
+        }
+
+        function rankList(id, items) {
+            document.getElementById(id).innerHTML = items.map((a, i) => `
+            <a href="details.html?id=${a.id}" class="rank-card">
+                <span class="rank-num">${i + 1}</span>
+                <img src="${a.icon}" class="rank-card-icon" alt="${a.name}">
+                <div class="rank-card-info">
+                    <div class="rank-card-name">${a.name}</div>
+                    <div class="rank-card-meta">${a.category} • ★ ${a.rating}</div>
+                </div>
+            </a>
+        `).join('');
+        }
+
+        // Search
+        const si = document.getElementById('searchInput');
+        let st, searchTrackTimer;
+        si.addEventListener('input', () => {
+            clearTimeout(st);
+            clearTimeout(searchTrackTimer);
+            st = setTimeout(() => {
+                const q = si.value.trim().toLowerCase();
+                if (q.length < 2) { document.getElementById('searchResults').classList.add('hidden'); return; }
+                const r = allApps.filter(a => a.name.toLowerCase().includes(q) || a.category.toLowerCase().includes(q) || a.developer.toLowerCase().includes(q));
+                const l = document.getElementById('searchResultsList');
+                l.innerHTML = r.length ? r.map(a => `
+                <a href="details.html?id=${a.id}" style="display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;text-decoration:none;color:inherit;border-bottom:1px solid var(--border);transition:background 0.2s;">
+                    <img src="${a.icon}" style="width:46px;height:46px;border-radius:12px;" loading="lazy">
+                    <div style="flex:1;"><div style="font-weight:600;color:var(--text-dark);">${a.name}</div><div style="font-size:0.8rem;color:var(--text-light);">${a.developer} • ${a.category}</div></div>
+                    <span style="background:var(--primary);color:#fff;padding:3px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">★ ${a.rating}</span>
+                </a>
+            `).join('') : '<p style="color:var(--text-light);text-align:center;padding:20px;">No apps found matching "' + q + '"</p>';
+                document.getElementById('searchResults').classList.remove('hidden');
+            }, 300);
+            searchTrackTimer = setTimeout(() => {
+                const q = si.value.trim();
+                if (q.length >= 3) trackSearch(q);
+            }, 1500);
+        });
+
+        // Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('menuOverlay');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+
+            if (menu.classList.contains('active') && !document.getElementById('mobileCatGrid').hasChildNodes()) {
+                const cats = ['Action', 'Arcade', 'Adventure', 'Racing', 'Simulation', 'Sports', 'Strategy', 'Tools', 'Social', 'Productivity'];
+                document.getElementById('mobileCatGrid').innerHTML = cats.map(c => `<a href="category.html?cat=${c}" class="mobile-cat-item">${c}</a>`).join('');
+
+                const tags = ['PUBG Mobile', 'Free Fire', 'Minecraft', 'Roblox', 'Genshin Impact'];
+                document.getElementById('mobileHotTags').innerHTML = tags.map(t => `<a href="#" class="cat-chip" style="font-size:0.8rem;padding:6px 12px;">${t}</a>`).join('');
+            }
+        }
+    </script>
+
+    <!-- Mobile Menu Elements -->
+    <div class="mobile-menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-title">Menu</div>
+            <button class="mobile-menu-close" onclick="toggleMenu()">✕</button>
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Navigation</div>
+                <a href="index.html" class="mobile-menu-link active">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                    Home
+                </a>
+                <a href="category.html?cat=Action" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    Games
+                </a>
+                <a href="category.html?cat=Tools" class="mobile-menu-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                    </svg>
+                    Apps
+                </a>
+            </div>
+
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Explore Categories</div>
+                <div class="mobile-cat-grid" id="mobileCatGrid"></div>
+            </div>
+
+            <div class="mobile-menu-section">
+                <div class="mobile-menu-label">Hot Tags</div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;" id="mobileHotTags"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
